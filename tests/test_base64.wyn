@@ -1,8 +1,9 @@
-fn main() -> int {
-    Test.init("base64")
+test "encode" {
     var encoded = Encoding.base64_encode("Hello, World!")
-    Test.assert(encoded.len() > 0, "encode")
-    Test.assert_eq_str(encoded, "SGVsbG8sIFdvcmxkIQ==", "encode value")
-    Test.summary()
-    return 0
+    assert(encoded.len() > 0)
+}
+
+test "encode value" {
+    var encoded = Encoding.base64_encode("Hello, World!")
+    assert_eq(encoded, "SGVsbG8sIFdvcmxkIQ==")
 }
