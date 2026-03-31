@@ -1,0 +1,2 @@
+// Base64 — encoding/decoding (builtin)
+// Base64.encode(s) -> string, Base64.decode(s) -> string
