@@ -1,4 +1,4 @@
-# base64 — Official Wyn Package
+# base64 - Official Wyn Package
 
 Base64 encode/decode. Uses built-in Encoding module.
 
